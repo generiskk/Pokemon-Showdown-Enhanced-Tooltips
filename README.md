@@ -1,4 +1,4 @@
-_Latest update July 17th, 2021!_ - Chrome & Firefox links coming soon(tm).
+_Latest update April 20th, 2021!_ - Chrome & Firefox links coming soon(tm).
 
 # Pokemon-Showdown-Enhanced-Tooltips
 A Chrome Extension/Firefox Addon that enhances the tooltips on [Pokemon Showdown](http://play.pokemonshowdown.com/)  by displaying additional information:
