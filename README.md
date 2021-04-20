@@ -43,6 +43,7 @@ This will create a `dist/` folder with a `chrome/` and `firefox/` folder. Use th
 
 ### Special Thanks
 Special thanks to [Karl Hughes](https://github.com/karllhughes) for their great contributions to the extension
+
 Also huge thanks to [Chris Schalago](https://github.com/rowin1) as the original creator of this addon. - Please msg me when you can :) 
 
 ### License
