@@ -1,4 +1,4 @@
-_Latest update April 20th, 2021!_ - Chrome & Firefox links coming soon(tm).
+_Latest update April 20th, 2021!_ - Chrome link coming soon(tm). - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/psim-enhanced-tooltips/)
 
 # Pokemon-Showdown-Enhanced-Tooltips
 A Chrome Extension/Firefox Addon that enhances the tooltips on [Pokemon Showdown](http://play.pokemonshowdown.com/)  by displaying additional information:
@@ -18,7 +18,7 @@ Optional settings (right click the extension icon and toggle the setting!):
 ![Screenshot](/screenshots/screenshot-PSET.png)
 
 ### Installation
-Chrome & Firefox links coming soon(tm).
+Chrome link coming soon(tm). - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/psim-enhanced-tooltips/)
 
 ### Contributing
 Bug reports and pull requests are welcome!  If you'd like to request a feature, please open an issue.  This project is intended to be a safe, welcoming space for collaboration.
