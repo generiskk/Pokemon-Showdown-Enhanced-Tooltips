@@ -1,6 +1,4 @@
-_Latest update July 17th, 2020!_
-[Chrome Download](https://chrome.google.com/webstore/detail/pok%C3%A9mon-showdown-enhanced/ehfemiiogehggdcmnpinokioccpijcfc)
-[Firefox Download](https://addons.mozilla.org/en-US/firefox/addon/pokemonshowdownenhancedtooltip/)
+_Latest update July 17th, 2021!_ - Chrome & Firefox links coming soon(tm).
 
 # Pokemon-Showdown-Enhanced-Tooltips
 A Chrome Extension/Firefox Addon that enhances the tooltips on [Pokemon Showdown](http://play.pokemonshowdown.com/)  by displaying additional information:
@@ -20,8 +18,7 @@ Optional settings (right click the extension icon and toggle the setting!):
 ![Screenshot](/screenshots/screenshot-PSET.png)
 
 ### Installation
-- [Chrome Download](https://chrome.google.com/webstore/detail/pok%C3%A9mon-showdown-enhanced/ehfemiiogehggdcmnpinokioccpijcfc) the latest version of Pokemon Showdown Enhanced Tooltips from the Chrome web store.
-- [Firefox Download](https://addons.mozilla.org/en-US/firefox/addon/pokemonshowdownenhancedtooltip/) the latest version on the Firefox Addon hub
+Chrome & Firefox links coming soon(tm).
 
 ### Contributing
 Bug reports and pull requests are welcome!  If you'd like to request a feature, please open an issue.  This project is intended to be a safe, welcoming space for collaboration.
@@ -46,6 +43,7 @@ This will create a `dist/` folder with a `chrome/` and `firefox/` folder. Use th
 
 ### Special Thanks
 Special thanks to [Karl Hughes](https://github.com/karllhughes) for their great contributions to the extension
+Also huge thanks to [Chris Schalago](https://github.com/rowin1) as the original creator of this addon. - Please msg me when you can :) 
 
 ### License
 This plugin and code is distributed under the [MIT license](https://opensource.org/licenses/MIT).
