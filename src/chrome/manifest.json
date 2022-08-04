@@ -2,37 +2,54 @@
 	"update_url": "https://clients2.google.com/service/update2/crx",
 	"name": "Pokémon Showdown Enhanced Tooltips",
 	"description": "Displays additional information on tooltips of Pokémon Showdown.",
-	"version": "1.2.1.1",
-	"manifest_version": 2,
-	"icons": { 
-		"16": "/icons/icon.png",
-		"32": "/icons/icon32.png",
-		"48": "/icons/icon48.png",
-		"64": "/icons/icon64.png",
-		"128": "/icons/icon128.png"
+	"version": "1.2.1.2",
+	"manifest_version": 3,
+	"icons": {
+	  "16": "/icons/icon.png",
+	  "32": "/icons/icon32.png",
+	  "48": "/icons/icon48.png",
+	  "64": "/icons/icon64.png",
+	  "128": "/icons/icon128.png"
 	},
 	"background": {
-		"scripts": [
-			"/js/settingsMenu.js"
-		]
-	},
-	"browser_action":{
-		"default_icon": "/icons/icon.png"
+	  "scripts": [
+		"service_worker.js"
+	  ]
 	},
 	"permissions": [
-		"contextMenus",
-		"storage",
-		"*://play.pokemonshowdown.com/*",
-		"*://*.psim.us/*"
+	  "contextMenus",
+	  "storage"
 	],
 	"web_accessible_resources": [
-		"/js/showPokemonTooltip.js"
+	  {
+		"resources": [
+		  "/js/showPokemonTooltip.js"
+		],
+		"matches": [
+		  "<all_urls>"
+		]
+	  }
 	],
 	"content_scripts": [
-		{
-			"matches": ["*://play.pokemonshowdown.com/*", "*://*.psim.us/*"],
-			"css": ["/css/style.css"],
-			"js": ["/js/main.js"]
-		}
+	  {
+		"matches": [
+		  "*://play.pokemonshowdown.com/*",
+		  "*://*.psim.us/*"
+		],
+		"css": [
+		  "/css/style.css"
+		],
+		"js": [
+		  "/js/main.js"
+		]
+	  }
+	],
+	"action": {
+	  "default_icon": "/icons/icon.png"
+	},
+	"content_security_policy": {},
+	"host_permissions": [
+	  "*://play.pokemonshowdown.com/*",
+	  "*://*.psim.us/*"
 	]
-}
+  }
