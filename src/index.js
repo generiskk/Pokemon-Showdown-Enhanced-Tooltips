@@ -1,7 +1,18 @@
 let ShowdownEnhancedTooltip = {};
 
 ShowdownEnhancedTooltip.Settings = {
-  showBaseStats: 'OFF',
+  get showBaseStats() {
+    try {
+      const settingsAttr = document.documentElement.getAttribute('data-showdown-settings');
+      if (settingsAttr) {
+        const settings = JSON.parse(settingsAttr);
+        return settings.showBaseStats || 'OFF';
+      }
+    } catch (e) {
+      console.error('Error reading showdown settings:', e);
+    }
+    return 'OFF';
+  }
 };
 
 ShowdownEnhancedTooltip.BattleTypeChart = {

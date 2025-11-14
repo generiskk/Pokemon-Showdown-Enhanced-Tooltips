@@ -18,7 +18,8 @@
 		"default_icon": "/icons/icon.png"
 	},
 	"permissions": [
-		"contextMenus"
+		"contextMenus",
+		"storage"
 	],
 	"host_permissions": [
 		"*://play.pokemonshowdown.com/*",

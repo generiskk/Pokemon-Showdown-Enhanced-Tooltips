@@ -3,21 +3,22 @@ chrome.contextMenus.create({
   id: "showBaseStats",
   title: "Show Base Stats",
   type: "checkbox",
-  contexts: ["browser_action"]
+  contexts: ["action"]
 });
 
 chrome.contextMenus.onClicked.addListener(function (info, tab) {
   if (info.menuItemId === "showBaseStats") {
     const checkedString = info.checked ? 'ON' : 'OFF';
-
-    localStorage['showBaseStats'] = checkedString;
-    alert('Show Base Stats: ' + checkedString + "; Please refresh your Pokemon Showdown tab if currently open.");
+    chrome.storage.local.set({ 'showBaseStats': checkedString });
   }
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "getLocalStorage") {
-      sendResponse({data: localStorage[request.key]});
+      chrome.storage.local.get(request.key).then((result) => {
+        sendResponse({data: result[request.key]});
+      });
+      return true;
     }
     else {
       sendResponse({});
