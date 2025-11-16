@@ -2,7 +2,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = [
-  // Firefox build
+  // Firefox build.
   {
     entry: './src/index.js',
     output: {
