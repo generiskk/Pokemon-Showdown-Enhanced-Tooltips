@@ -3,6 +3,11 @@
 	"description": "Displays additional information on tooltips of Pokémon Showdown.",
 	"version": "1.2.1.2",
 	"manifest_version": 3,
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{99a51b62-ad80-419a-ad3f-fa3b401be842}"
+		}
+	},
 	"icons": {
 		"16": "/icons/icon.png",
 		"32": "/icons/icon32.png",

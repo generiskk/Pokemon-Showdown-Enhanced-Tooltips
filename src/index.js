@@ -451,9 +451,19 @@ ShowdownEnhancedTooltip.getStatbarHTML = function getStatbarHTML(pokemon) {
   let buf = '<div class="statbar' + (this.siden ? ' lstatbar' : ' rstatbar') + '" style="display: none">';
   const ignoreNick = this.siden && (this.scene.battle.ignoreOpponent || this.scene.battle.ignoreNicks);
 
-  // *****************
-  // Make pokemon name open smogon link in new tab
-  buf += `<strong><a href="https://www.smogon.com/dex/ss/pokemon/${pokemon.name}/" target="_blank" style="color: #222222; text-decoration: none;">${BattleLog.escapeHTML(ignoreNick ? pokemon.species : pokemon.name)}</a>`;
+  const genMap = {
+    1: 'rb',
+    2: 'gs',
+    3: 'rs',
+    4: 'dp',
+    5: 'bw',
+    6: 'xy',
+    7: 'sm',
+    8: 'ss',
+    9: 'sv'
+  };
+  const genCode = genMap[this.scene.battle.gen] || 'sv';
+  buf += `<strong><a href="https://www.smogon.com/dex/${genCode}/pokemon/${pokemon.name}/" target="_blank" style="color: #222222; text-decoration: none;">${BattleLog.escapeHTML(ignoreNick ? pokemon.species : pokemon.name)}</a>`;
   //
 
   const gender = pokemon.gender;
